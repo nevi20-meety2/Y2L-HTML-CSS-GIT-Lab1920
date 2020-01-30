@@ -15,7 +15,7 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a, .ohmygodbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -23,18 +23,15 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .ohmygod:hover .ohmygodbtn {
   background-color: #EF3E36;
 }
-a:hover {
-  color: white;
-  text-decoration:none;
-}
-li.dropdown {
+
+li.ohmygod {
   display: inline-block;
 }
 
-.dropdown-content {
+.ohmygod-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -43,7 +40,7 @@ li.dropdown {
   z-index: 100;
 }
 
-.dropdown-content a {
+.ohmygod-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -51,9 +48,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #EF3E36;}
+.ohmygod-content a:hover {background-color: #EF3E36;}
 
-.dropdown:hover .dropdown-content {
+.ohmygod:hover .ohmygod-content {
   display: block;
 }
 
@@ -88,4 +85,9 @@ h1{
   padding: -30px;
   margin: 10px;
   top: 20px;
+}
+
+a:hover {
+  color: white;
+  text-decoration:none;
 }

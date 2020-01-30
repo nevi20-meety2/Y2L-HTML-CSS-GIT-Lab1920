@@ -1,5 +1,5 @@
 body{
-  background-color: #F2EEE8;
+ 	background-color: #F2EEE8;
  }
 ul {
   list-style-type: none;
@@ -15,7 +15,7 @@ li {
   float: left;
 }
 
-li a, .ohmygodbtn {
+li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -23,15 +23,15 @@ li a, .ohmygodbtn {
   text-decoration: none;
 }
 
-li a:hover, .ohmygod:hover .ohmygodbtn {
+li a:hover, .dropdown:hover .dropbtn {
   background-color: #EF3E36;
 }
 
-li.ohmygod {
+li.dropdown {
   display: inline-block;
 }
 
-.ohmygod-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -40,7 +40,7 @@ li.ohmygod {
   z-index: 100;
 }
 
-.ohmygod-content a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -48,34 +48,14 @@ li.ohmygod {
   text-align: left;
 }
 
-.ohmygod-content a:hover {background-color: #EF3E36;}
+.dropdown-content a:hover {background-color: #EF3E36;}
 
-.ohmygod:hover .ohmygod-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
-
-.fineline{
-  
-}
-.hs1{
-  /*position: absolute;*/
-  /*padding-left: 30%;*/
-}
-.thisis{
-  /*position: absolute;*/
-  /*padding-left: 30%;*/
-}
-.position{
-  align-self: center;
-}
-
-.col{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.margin{
-  margin-top: 90px;
+.posts{
+	/*position: absolute;*/
+	margin-top: 30px;
 }
 h1{
   color: black;
@@ -87,7 +67,3 @@ h1{
   top: 20px;
 }
 
-a:hover {
-  color: white;
-  text-decoration:none;
-}

@@ -32,3 +32,4 @@ def checkUser(username,password):
 
 #print(qurey_users())
 #print(checkUser('f','f'))
+print(qurey_users())

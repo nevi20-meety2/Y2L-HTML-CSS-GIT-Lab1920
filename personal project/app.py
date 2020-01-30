@@ -73,17 +73,26 @@ def spotifylo():
 def spotifyn():
      return render_template('spotifyn.html')
 
-    @app.route('/spotifyz')
+@app.route('/spotifyz')
 def spotifyz():
      return render_template('spotifyz.html')
 
-# @app.route('/spotifyone')
-# def spotifyone():
-#      return render_template('spotifyone.html')
+@app.route('/spotifyone')
+def spotifyone():
+     return render_template('spotifyone.html')
 
-@app.route('/profile')
-def profile():
-     return render_template('profile.html')
+@app.route('/profile' ,methods=["GET","POST"])
+def gotoprofile():
+    if request.method =="GET":
+        return render_template('gotoprofile.html')
+    else:
+        name = request.form['search']
+        return render_template('profile.html',user=query_user(name))
+
+@app.route('/profile/<string:name>')
+def profile(name):
+    user = query_user(name)
+    return render_template('profile.html',user=user)
 
 if __name__ == '__main__':
     app.run(debug=True)
